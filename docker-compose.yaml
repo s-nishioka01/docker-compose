@@ -11,9 +11,7 @@ services:
       MYSQL_DATABASE: movie_list
       MYSQL_USER: user
       MYSQL_PASSWORD: example
-      TZ: "Asia/Tokyo"
     ports:
       - 3307:3306
     volumes:
       - $PWD/sql:/docker-entrypoint-initdb.d
-      - $PWD/conf/mysql:/etc/mysql/conf.d
